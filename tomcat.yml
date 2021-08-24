@@ -9,5 +9,5 @@
        src: /root/apache-tomcat-8.5.70
        dest: /opt/
        mode: 0755
-    - name: Starting the tomcat
-      shell: "sh /opt/apache-tomcat-8.5.70/bin/startup.sh"
+   - name: Starting the tomcat
+     shell: "sh /opt/apache-tomcat-8.5.70/bin/startup.sh"
