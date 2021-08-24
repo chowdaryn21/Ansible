@@ -1,0 +1,6 @@
+---
+- name: Ansible Example
+  hosts: all
+  tasks:
+   - name: ping example
+     shell: "ip a" 
