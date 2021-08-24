@@ -4,5 +4,10 @@
   hosts: all
   gather_facts: no
   tasks:
-   - name: ping example
-     shell: "ip a"
+   - name: Tomcate Setup
+     copy:
+       src: /root/apache-tomcat-8.5.70
+       dest: /opt/
+       mode: 0755
+    - name: Starting the tomcat
+      shell: "sh /opt/apache-tomcat-8.5.70/bin/startup.sh"
