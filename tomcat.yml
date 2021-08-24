@@ -1,6 +1,8 @@
 ---
-- name: Ansible Example
+- name: Tomcat Setup
+  user: root
   hosts: all
+  gather_facts: no
   tasks:
    - name: ping example
-     shell: "ip a" 
+     shell: "ip a"
